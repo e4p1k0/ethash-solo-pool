@@ -38,7 +38,7 @@ func (self PayoutsConfig) GasHex() string {
 }
 
 func (self PayoutsConfig) GasPriceHex() string {
-	x := util.String2Big(self.Gas)
+	x := util.String2Big(self.GasPrice)
 	return hexutil.EncodeBig(x)
 }
 
